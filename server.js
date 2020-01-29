@@ -1,15 +1,15 @@
-const arraynumber = [1, 6, 3, 5, 4, 2, 7];
-const guarda = [];
+//algoritmo ordenação - boblesort
 
-for (let index = 0; index < arraynumber.length; index++) {
-  const element = arraynumber[index];
+const arraynumber = [8, 6, 3, 5, 4, 2, 7];
 
-  if (arraynumber [0] )
-  
-
-
+for (let i = 0; i < arraynumber.length; i+=1) {
+  for (let j = 0; j < arraynumber.length; j+=1) {
+    let aux = 0;
+    if (arraynumber[i] < arraynumber[j]) {
+      aux = arraynumber[i];
+      arraynumber[i] = arraynumber[j];
+      arraynumber[j] = aux;
+    }
+  }
 }
-
-
-if (arraynumber[0]< arraynumber[1])
-  if (arraynumber[1]< arraynumber[2])
+console.log (arraynumber)
